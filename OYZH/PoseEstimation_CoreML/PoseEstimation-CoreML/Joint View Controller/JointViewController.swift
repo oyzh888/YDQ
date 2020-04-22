@@ -100,22 +100,7 @@ class JointViewController: UIViewController {
     
     // MARK: - SetUp Video
     func setUpCamera() {
-        videoCapture = VideoCapture()
-        videoCapture.delegate = self
-        videoCapture.fps = 30
-        videoCapture.setUp(sessionPreset: .vga640x480) { success in
-            
-            if success {
-                // add preview view on the layer
-                if let previewLayer = self.videoCapture.previewLayer {
-                    self.videoPreview.layer.addSublayer(previewLayer)
-                    self.resizePreviewLayer()
-                }
-                
-                // start video preview when setup is done
-                self.videoCapture.start()
-            }
-        }
+        switchCamera()
     }
     
     func switchCamera(){
@@ -281,3 +266,4 @@ extension JointViewController: 📏Delegate {
         self.fpsLabel.text = "fps: \(fps)"
     }
 }
+
