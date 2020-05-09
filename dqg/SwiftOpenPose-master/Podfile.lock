@@ -1,0 +1,20 @@
+PODS:
+  - OpenCV (3.3.1)
+  - Upsurge (0.10.2)
+
+DEPENDENCIES:
+  - OpenCV (~> 3.3.1)
+  - Upsurge (~> 0.10.2)
+
+SPEC REPOS:
+  https://gitee.com/mirrors/CocoaPods-Specs.git:
+    - OpenCV
+    - Upsurge
+
+SPEC CHECKSUMS:
+  OpenCV: d81447860f038d60723084aa02ecc963f95c55fa
+  Upsurge: 5866beadc3da27f91c5df4ac795deb3f3238d678
+
+PODFILE CHECKSUM: 4aeba1c6cc3021c919ef9363c96725da6c083ef7
+
+COCOAPODS: 1.9.1
